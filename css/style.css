@@ -604,6 +604,7 @@ pre code {
   .container {
     max-width: 960px;
   }
+  
 }
 
 @media (min-width: 1200px) {
@@ -13438,7 +13439,6 @@ textarea.form-control {
 @media (max-width: 992px) {
   .logo-about {
     background-size: contain;
-    transform: scale(2);
   }
 }
 
@@ -14002,7 +14002,23 @@ textarea.form-control {
 }
 
 #img-sobre img {
+  display: block;
   object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  #img-sobre img {
+    min-width: 400px;
+    transform: scale(0.8);
+    position: relative;
+    right: 7vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #img-sobre img {
+    display: none;
+  }
 }
 
 .sublinhado a{
